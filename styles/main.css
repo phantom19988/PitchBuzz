@@ -1,0 +1,189 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+
+  margin-left: 490px;
+}
+
+
+/* Clear floats */
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.235), rgba(0, 0, 0, 0.6)), url('../images/banner-1.webp');
+  object-fit: cover;
+  background-size: 100% 100%;
+  color: #fff;   
+  padding: 100px 0;
+  text-align: center;
+
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(150px);
+}
+
+
+
+
+
+
+
+/* Features */
+.features {
+  padding: 60px 0;
+   background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: black;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+   background: #c7c7c7;
+  padding: 20px;
+  flex: 1 1 30%;
+  margin: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.box:hover {
+   border: 1px solid black;
+}
+
+.box h3 {
+ color: black;
+  margin-bottom: 10px;
+}
+
+
+
+/* Reviews */
+.review-box {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 2px 1px 4px rgba(0,0,0,0.05);
+  border: 1px solid black;
+}
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/* Iconic moment */
+.iconic-moment {
+  margin-top: 40px;
+  background: #fff3e0;
+  padding: 20px;
+  border-left: 5px solid #fb8c00;
+  border-radius: 5px;
+}
+
+/* Emerging talent */
+.emerging-talent {
+  margin-top: 30px;
+  background: #ede7f6;
+  padding: 20px;
+  border-left: 5px solid #673ab7;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
